@@ -1,0 +1,8 @@
+C:\Users\natha\source\repos\BudgetPlannerApp\bin\Debug\BudgetPlannerApp.exe.config
+C:\Users\natha\source\repos\BudgetPlannerApp\bin\Debug\BudgetPlannerApp.exe
+C:\Users\natha\source\repos\BudgetPlannerApp\bin\Debug\BudgetPlannerApp.pdb
+C:\Users\natha\source\repos\BudgetPlannerApp\obj\Debug\BudgetPlannerApp.csproj.AssemblyReference.cache
+C:\Users\natha\source\repos\BudgetPlannerApp\obj\Debug\BudgetPlannerApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\natha\source\repos\BudgetPlannerApp\obj\Debug\BudgetPlannerApp.csproj.CoreCompileInputs.cache
+C:\Users\natha\source\repos\BudgetPlannerApp\obj\Debug\BudgetPlannerApp.exe
+C:\Users\natha\source\repos\BudgetPlannerApp\obj\Debug\BudgetPlannerApp.pdb
