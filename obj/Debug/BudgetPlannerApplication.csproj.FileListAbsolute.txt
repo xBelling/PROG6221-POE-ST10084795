@@ -1,0 +1,3 @@
+C:\Users\natha\source\repos\BudgetPlannerApplication\obj\Debug\BudgetPlannerApplication.csproj.AssemblyReference.cache
+C:\Users\natha\source\repos\BudgetPlannerApplication\obj\Debug\BudgetPlannerApplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\natha\source\repos\BudgetPlannerApplication\obj\Debug\BudgetPlannerApplication.csproj.CoreCompileInputs.cache
