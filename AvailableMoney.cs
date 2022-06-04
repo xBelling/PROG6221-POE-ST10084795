@@ -13,8 +13,7 @@ namespace BudgetPlannerApp
         public override void MonthlyAmount()
         {
             //Available money calculation
-            monthlyExpense = Income.grossIncome - (Income.incomeTaxDed + Rental.rentalPayment 
-                + HomeLoan.homeLoanRepayment + Expenditure.totalExpenses + Vehicle.vehicleRepay);
+            monthlyExpense = Income.grossIncome - (Income.incomeTaxDed + TotalExpense.expnsTot);
             monthlyExpense = Math.Round(monthlyExpense, 2); //Rounds off the available money to two decimal places
 
             Console.WriteLine("Your monthly income after all deductions : R" + monthlyExpense); //Prints the available money amount

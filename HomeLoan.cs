@@ -23,7 +23,7 @@ namespace BudgetPlannerApp
             double total;
 
             //Prompts for property value and reads
-            Console.Write("Enter the full purchase price of the property that you are buying : --> R");
+            Console.Write("\nEnter the full purchase price of the property that you are buying : --> R");
             purchasePrice = Convert.ToDouble(Console.ReadLine());
             //Prompts for desposit amount and reads
             Console.Write("Enter the deposit amount : R");

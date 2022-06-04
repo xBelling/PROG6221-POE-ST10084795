@@ -10,6 +10,8 @@ namespace BudgetPlannerApp
     {
         //List to store the values of the user's expenses
         public static List<double> expnsVal = new List<double>();
+        //Variable used to store the value of the sum of the expenses
+        public static double expnsTot;
         //Delegate to notify the user that their total expenses exceed 75% of their net income
         public delegate void WarningDelegate();
         
@@ -53,7 +55,7 @@ namespace BudgetPlannerApp
         //Method used to determine if the user's expenses exceed 75% of their net income 
         public static void Warning()
         {
-            double expnsTot = expnsVal.Sum(x => Convert.ToDouble(x));
+            expnsTot = expnsVal.Sum(x => Convert.ToDouble(x));
             expnsTot = Math.Round(expnsTot, 2);
 
             //Warning notification

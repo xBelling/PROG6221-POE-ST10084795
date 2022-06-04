@@ -45,7 +45,7 @@ namespace BudgetPlannerApp
             if (answer.Equals("1"))
             {
                 Console.WriteLine("\nEnter the name(s) of your other expense(s)," +
-                    "\nEnter 1 when asked for the next expense to stop adding expenses");
+                    "\nEnter 1 when asked for the next expense to stop adding expenses\n");
                 int count = 0;
                 while (count > -1)
                 {

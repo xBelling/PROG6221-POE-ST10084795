@@ -28,11 +28,11 @@ namespace BudgetPlannerApp
             };
             id.Invoke(1000); //Invokes the threading method
 
-            Console.WriteLine("\n-----------------------------------------------------------\n" +
+            Console.WriteLine("\n===========================================================\n" +
                 "\t--- Welcome to the Budget Planner App ---\n" +
-                "-----------------------------------------------------------");//Splash screen
+                "===========================================================");//Splash screen
 
-            Console.WriteLine("\nMonthly Income\n" +
+            Console.WriteLine("Monthly Income\n" +
                 "-----------------------------------------------------------");
             Income inc = new Income();
             inc.MonthlyAmount(); //Invokes the MonthlyAmount method from the Income class
