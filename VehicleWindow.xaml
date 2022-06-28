@@ -1,0 +1,209 @@
+﻿<Window x:Class="BudPlan.VehicleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudPlan"
+        mc:Ignorable="d"
+        Title="VehicleWindow" Height="450" Width="800"
+        Background="Black"
+        ResizeMode="NoResize"
+        Topmost="True"
+        WindowStyle="SingleBorderWindow"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!--Grid Creation-->
+        <Grid>
+            <!--Header-->
+            <TextBlock Foreground="GhostWhite"
+                   Text="BUYING A VEHICLE"
+                   TextAlignment="Center"
+                   FontSize="30"
+                   FontWeight="Bold"
+                   Margin="0,10,0,0">
+            </TextBlock>
+        </Grid>
+        <!--Grid Creation-->
+        <Grid Height="300"
+              Margin="0,-20,0,0"
+            Background="GhostWhite">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--Make and Model-->
+            <TextBlock Grid.Row="0"
+                       Grid.Column="0"
+                       Text="Make and Model"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,10,0,0">
+            </TextBlock>
+            <TextBox Grid.Row="0"
+                     Grid.Column="1"
+                     Margin="20,10,20,12"
+                     Height="35"
+                     TextAlignment="Left"
+                     FontWeight="Bold"
+                     FontSize="26"
+                     Text="{Binding makeModel, Mode=TwoWay}">
+            </TextBox>
+            <!--Purchase Price-->
+            <TextBlock Grid.Row="1"
+                       Grid.Column="0"
+                       Text="Purchase Price"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,10,0,0">
+            </TextBlock>
+            <TextBlock Grid.Row="1"
+                       Grid.Column="1"
+                       Text="R"
+                       TextAlignment="Left"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,15,0,0">
+            </TextBlock>
+            <TextBox Grid.Row="1"
+                     Grid.Column="1"
+                     Margin="20,10,75,12"
+                     Height="35"
+                     TextAlignment="Left"
+                     FontWeight="Bold"
+                     FontSize="26"
+                     Text="{Binding purchPrice, Mode=TwoWay}">
+            </TextBox>
+            <!--Deposit-->
+            <TextBlock Grid.Row="2"
+                       Grid.Column="0"
+                       Text="Deposit"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,10,0,0">
+            </TextBlock>
+            <TextBlock Grid.Row="2"
+                       Grid.Column="1"
+                       Text="R"
+                       TextAlignment="Left"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,15,0,0">
+            </TextBlock>
+            <TextBox Grid.Row="2"
+                     Grid.Column="1"
+                     Margin="20,10,75,12"
+                     Height="35"
+                     TextAlignment="Left"
+                     FontWeight="Bold"
+                     FontSize="26"
+                     Text="{Binding totDeposit, Mode=TwoWay}">
+            </TextBox>
+            <!--Interest rate on payment-->
+            <TextBlock Grid.Row="3"
+                       Grid.Column="0"
+                       Text="Interest Rate"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,10,0,0">
+            </TextBlock>
+            <TextBlock Grid.Row="3"
+                       Grid.Column="0"
+                       Text="(Format: 7.5% -> 7,5)"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="12"
+                       Margin="0,38,0,0">
+            </TextBlock>
+            <TextBlock Grid.Row="3"
+                       Grid.Column="1"
+                       Text="%"
+                       TextAlignment="Left"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="100,15,0,0">
+            </TextBlock>
+            <TextBox Grid.Row="3"
+                     Grid.Column="1"
+                     Margin="20,10,300,12"
+                     Height="35"
+                     TextAlignment="Left"
+                     FontWeight="Bold"
+                     FontSize="26"
+                     Text="{Binding intRate, Mode=TwoWay}">
+            </TextBox>
+            <!--Insurance Premium-->
+            <TextBlock Grid.Row="4"
+                       Grid.Column="0"
+                       Text="Insurance Premium"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,10,0,0">
+            </TextBlock>
+            <TextBlock Grid.Row="4"
+                       Grid.Column="1"
+                       Text="R"
+                       TextAlignment="Left"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,15,0,0">
+            </TextBlock>
+            <TextBox Grid.Row="4"
+                     Grid.Column="1"
+                     Margin="20,10,75,12"
+                     Height="35"
+                     TextAlignment="Left"
+                     FontWeight="Bold"
+                     FontSize="26"
+                     Text="{Binding insurancePrem, Mode=TwoWay}">
+            </TextBox>
+        </Grid>
+        <!--Grid Creation-->
+        <Grid Height="50"
+              Margin="0,350,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!--Next Button-->
+            <Button x:Name="next"
+                    Margin="60,0,60,0"
+                    Grid.Column="2"
+                    Content="Next"
+                    FontSize="26"
+                    FontWeight="Bold"
+                    Background="PaleGreen" Click="next_Click">
+            </Button>
+            <!--Home Button-->
+            <Button x:Name="home"
+                    Margin="60,0,60,0"
+                    Grid.Column="1"
+                    Content="Home"
+                    FontSize="26"
+                    FontWeight="Bold"
+                    Background="GhostWhite" Click="home_Click">
+            </Button>
+            <!--Back Button-->
+            <Button x:Name="back"
+                    Margin="60,0,60,0"
+                    Grid.Column="0"
+                    Content="Back"
+                    FontSize="26"
+                    FontWeight="Bold"
+                    Background="PaleVioletRed" Click="back_Click">
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

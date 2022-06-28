@@ -1,0 +1,162 @@
+﻿<Window x:Class="BudPlan.OtherExpensesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudPlan"
+        mc:Ignorable="d"
+        Title="OtherExpensesWindow" Height="450" Width="800"
+         Background="Black"
+        ResizeMode="NoResize"
+        Topmost="True"
+        WindowStyle="SingleBorderWindow"
+        WindowStartupLocation="CenterScreen">
+    
+    <Grid>
+        <TextBlock Foreground="GhostWhite"
+                   Text="OTHER MONTHLY EXPENSES"
+                   TextAlignment="Center"
+                   FontSize="30"
+                   FontWeight="Bold"
+                   Margin="0,40,0,0">
+        </TextBlock>
+        <!--Grid Creation-->
+        <Grid Height="200"
+            Background="GhostWhite">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--Other Monthly Expenses-->
+            <TextBlock Grid.Row="0"
+                       Grid.Column="0"
+                       Text="Other Monthly Expense"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,15,0,0">
+            </TextBlock>
+            <TextBlock Grid.Row="0"
+                       Grid.Column="1"
+                       Text="R"
+                       TextAlignment="Left"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,15,0,0">
+            </TextBlock>
+            <TextBox Grid.Row="0"
+                     Grid.Column="1"
+                     Height="35"
+                     Margin="20,12,75,12"
+                     TextAlignment="Left"
+                     FontWeight="Bold"
+                     FontSize="26"
+                     Text="{Binding otherExpOne, Mode=TwoWay}">
+            </TextBox>
+            <TextBlock Grid.Row="1"
+                       Grid.Column="0"
+                       Text="Other Monthly Expense"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,15,0,0">
+            </TextBlock>
+            <TextBlock Grid.Row="1"
+                       Grid.Column="1"
+                       Text="R"
+                       TextAlignment="Left"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,15,0,0">
+            </TextBlock>
+            <TextBox Grid.Row="1"
+                     Grid.Column="1"
+                     Height="35"
+                     Margin="20,12,75,12"
+                     TextAlignment="Left"
+                     FontWeight="Bold"
+                     FontSize="26"
+                     Text="{Binding otherExpTwo, Mode=TwoWay}">
+            </TextBox>
+            <TextBlock Grid.Row="2"
+                       Grid.Column="0"
+                       Text="Other Monthly Expense"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,15,0,0">
+            </TextBlock>
+            <TextBlock Grid.Row="2"
+                       Grid.Column="1"
+                       Text="R"
+                       TextAlignment="Left"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,15,0,0">
+            </TextBlock>
+            <TextBox Grid.Row="2"
+                     Grid.Column="1"
+                     Height="35"
+                     Margin="20,12,75,12"
+                     TextAlignment="Left"
+                     FontWeight="Bold"
+                     FontSize="26"
+                     Text="{Binding otherExpThree, Mode=TwoWay}">
+            </TextBox>
+        </Grid>
+        <!--Grid Creation-->
+        <Grid VerticalAlignment="Bottom"
+              Height="80">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--Next Button-->
+            <Button x:Name="next"
+                    Grid.Column="3"
+                    Margin="30,0,30,30"
+                    Content="Next"
+                    FontSize="26"
+                    FontWeight="Bold"
+                    Background="PaleGreen" Click="next_Click">
+            </Button>
+            <!--Back Button-->
+            <Button x:Name="back"
+                    Grid.Column="0"
+                    Margin="30,0,30,30"
+                    Content="Back"
+                    FontSize="26"
+                    FontWeight="Bold"
+                    Background="PaleVioletRed" Click="back_Click">
+            </Button>
+            <!--Home Button-->
+            <Button x:Name="home"
+                    Grid.Column="1"
+                    Margin="30,0,30,30"
+                    Content="Home"
+                    FontSize="26"
+                    FontWeight="Bold"
+                    Background="GhostWhite" Click="home_Click">
+            </Button>
+            <!--Add more Button-->
+            <Button x:Name="add"
+                    Grid.Column="2"
+                    Margin="30,0,30,30"
+                    Content="Add More"
+                    FontSize="26"
+                    FontWeight="Bold"
+                    Background="LightGoldenrodYellow" Click="add_Click">
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

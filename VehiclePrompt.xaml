@@ -1,0 +1,84 @@
+﻿<Window x:Class="BudPlan.VehiclePrompt"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudPlan"
+        mc:Ignorable="d"
+        Title="VehiclePrompt" Height="450" Width="800"
+        Background="Black"
+        ResizeMode="NoResize"
+        Topmost="True"
+        WindowStyle="SingleBorderWindow"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <!--Header-->
+        <TextBlock Foreground="GhostWhite"
+                   Text="VEHICLE"
+                   TextAlignment="Center"
+                   FontSize="30"
+                   FontWeight="Bold"
+                   Margin="0,50,0,0">
+        </TextBlock>
+        <!--Grid Creation-->
+        <Grid Height="100"
+              Background="GhostWhite">
+            <TextBlock Text="Are you going to buy a vehicle?"
+                       FontSize="26"
+                       FontWeight="Bold"
+                       TextAlignment="Center"
+                       Margin="0,30,0,0">
+            </TextBlock>
+        </Grid>
+        <!--Grid Creation-->
+        <Grid Height="50"
+              Margin="0,320,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--Back Button-->
+            <Button Grid.Column="0"
+                    FontSize="26"
+                    FontWeight="Bold"
+                    Content="Back"
+                    Background="PaleVioletRed"
+                    Margin="30,0,30,0"
+                    x:Name="back" Click="back_Click">
+            </Button>
+            <!--Home Button-->
+            <Button Grid.Column="1"
+                    FontSize="26"
+                    FontWeight="Bold"
+                    Content="Home"
+                    Background="GhostWhite"
+                    Margin="30,0,30,0"
+                    x:Name="home" Click="home_Click">
+            </Button>
+            <!--Yes Button-->
+            <Button Grid.Column="2"
+                    FontSize="26"
+                    FontWeight="Bold"
+                    Content="Yes"
+                    Background="LightGoldenrodYellow"
+                    Margin="30,0,30,0"
+                    x:Name="yes" Click="yes_Click">
+            </Button>
+            <!--No/Next Button-->
+            <Button Grid.Column="3"
+                    FontSize="26"
+                    FontWeight="Bold"
+                    Content="No/Next"
+                    Background="PaleGreen"
+                    Margin="30,0,30,0"
+                    x:Name="no" Click="no_Click">
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

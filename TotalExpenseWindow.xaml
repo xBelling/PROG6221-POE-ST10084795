@@ -1,0 +1,95 @@
+﻿<Window x:Class="BudPlan.TotalExpenseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudPlan"
+        mc:Ignorable="d"
+        Title="TotalExpenseWindow" Height="450" Width="800"
+        Background="Black"
+        ResizeMode="NoResize"
+        Topmost="True"
+        WindowStyle="SingleBorderWindow"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!--Grid Creation-->
+        <Grid>
+            <!--Header-->
+            <TextBlock Foreground="GhostWhite"
+                   Text="YOUR EXPENSES"
+                   TextAlignment="Center"
+                   FontSize="30"
+                   FontWeight="Bold"
+                   Margin="0,20,0,0">
+            </TextBlock>
+        </Grid>
+        <Grid Height="250"
+            Background="GhostWhite">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!--Monthly Expenses-->
+            <TextBlock Grid.Column="0"
+                       Text="Your Monthly Expenses"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,35,0,0">
+            </TextBlock>
+            <TextBlock Grid.Column="0"
+                       Text="(In Descending Order)"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="12"
+                       Margin="0,70,0,0">
+            </TextBlock>
+            <Button x:Name="viewExp"
+                    Grid.Column="1"
+                    Margin="100,40,100,160"
+                    Content="VIEW"
+                    FontSize="26"
+                    FontWeight="Bold" Click="viewExp_Click">
+            </Button>
+            <!--Available Money-->
+            <TextBlock Grid.Column="0"
+                       Text="Available Money"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="26"
+                       Margin="0,170,0,0">
+            </TextBlock>
+            <TextBlock Grid.Column="0"
+                       Text="(After All Deductions)"
+                       TextAlignment="Center"
+                       FontWeight="Bold"
+                       FontSize="12"
+                       Margin="0,205,0,0">
+            </TextBlock>
+            <Button x:Name="viewAva"
+                    Grid.Column="1"
+                    Margin="100,170,100,30"
+                    Content="VIEW"
+                    FontSize="26"
+                    FontWeight="Bold" Click="viewAva_Click">
+            </Button>
+            
+        </Grid>
+        <!--Grid Creation-->
+        <Grid Height="50"
+              Margin="0,340,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!--Home Button-->
+            <Button x:Name="home"
+                    Margin="320,0,320,0"
+                    Grid.Column="1"
+                    Content="Home"
+                    FontSize="26"
+                    FontWeight="Bold"
+                    Background="GhostWhite" Click="home_Click">
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
